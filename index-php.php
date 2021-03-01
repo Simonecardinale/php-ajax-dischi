@@ -13,10 +13,15 @@ include __DIR__ .'/\partials-php\db.php';
     <title>Document</title>
 </head>
 <body>
-    <div class="dischi">
+    <div class="container">
         <?php foreach ($dischiArray as $k => $item){?>
-            <img src="<?php echo $item["immagine"] ?>" alt="">
-            <?php }?>
+            <div class="dischi">
+                <img src="<?php echo $item["immagine"] ?>" alt="">
+                <h2><?php echo $item['titolo']?></h2>
+                <p><?php echo $item['autore'] ?></p>
+                <p><?php echo $item['genere'] ?></p>
+            </div>
+        <?php }?>
     </div>
 </body>
 </html>
