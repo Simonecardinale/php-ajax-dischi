@@ -4,19 +4,36 @@
     box-sizing: border-box;
 }
 
+@import "partials-scss/mixins"; 
+@import "partials-scss/navbar";
+
+body {
+    background-color: black;
+}
+
 .container {
     width: 90%;
+    height: 100%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+}
+
+.dischi-container {
+    width: 100%;
+    @include display-flex (space-around);
 }
 
 .dischi {
     text-align: center;
+    color: white;
 }
 
-img {
+.dischi-container img {
     height: 200px;
     padding: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: grey;
+        transform: scale(1.10);
+        transition: all 0.5s ease;
+    }
 }

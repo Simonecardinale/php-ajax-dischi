@@ -1,0 +1,26 @@
+nav {
+    height: 70px;
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid grey;
+}
+
+.nav-container {
+    height: 100%;
+    @include display-flex (space-between);
+    align-items: center;
+}
+
+nav img {
+    height: 50px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-container i {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: grey;
+    }
+}

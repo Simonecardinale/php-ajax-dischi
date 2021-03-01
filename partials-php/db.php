@@ -23,7 +23,7 @@
             "titolo" => "Angels of Clarity",
             "autore" => "Dead by April",
             "genere" => "Metal",
-            "immagine" => "https://lh3.googleusercontent.com/proxy/Nek8zaTNmXHM0LvujcjcvxpllCjquJoj1uetZdIhNXIoyDUGDBKTV2aRMwizTjHmrlgZ6ipe83CUio4-Ix_rNOyMeJhJ9WE5iXK8IFXtPorB_qDPNZTKva8F4_EIyQrvqVhGy2RCZdiIlKErjPM_D-XTRRQB"
+            "immagine" => "https://i.scdn.co/image/5354303f0ea8b65cfd82b16313cf024488474b8e"
         ],
         [
             "titolo" => "You Should Know",
@@ -47,7 +47,7 @@
             "titolo" => "Erased",
             "autore" => "Dead by April",
             "genere" => "Metal",
-            "immagine" => "https://lh3.googleusercontent.com/-VgiXzGWA5n0/T-PNv8sF2OI/AAAAAAAAFmg/KvsGYqD109E/s403/deadbyapril2012.jpg"
+            "immagine" => "https://heavymag.com.au/wp-content/uploads/2017/04/Dead-By-April-Australian-Tour.jpg"
         ],
         [
             "titolo" => "Dreaming",
