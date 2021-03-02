@@ -1,5 +1,5 @@
 <?php 
-include __DIR__ .'/partials-php\db.php';
+include __DIR__ .'/partials-php/db.php';
 ?>
 
 
