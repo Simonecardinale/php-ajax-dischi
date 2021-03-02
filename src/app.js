@@ -33,6 +33,7 @@ var app = new Vue({
                     this.filterArray = this.dischiArray;
                 }
             });
+            
         }
     }
 });
