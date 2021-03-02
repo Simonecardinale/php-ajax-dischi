@@ -11,7 +11,7 @@ var app = new Vue({
   el: '#app',
   data: {
     dischiArray: [],
-    optionArray: [],
+    optionArray: ["All"],
     filterArray: []
   },
   mounted: function mounted() {
@@ -43,9 +43,9 @@ var app = new Vue({
           console.log(element);
 
           _this2.filterArray.push(element);
+        } else if (_this2.optionArray[index] == "All") {
+          _this2.filterArray = _this2.dischiArray;
         }
-
-        console.log(_this2.filterArray);
       });
     }
   }

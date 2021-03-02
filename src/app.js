@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         dischiArray: [],
-        optionArray: [],
+        optionArray: ["All"],
         filterArray: [],
     },
 
@@ -29,8 +29,9 @@ var app = new Vue({
                 if(this.optionArray[index] == element.genere) {
                     console.log(element);
                     this.filterArray.push(element);
+                } else if (this.optionArray[index] == "All") {
+                    this.filterArray = this.dischiArray;
                 }
-                console.log(this.filterArray);
             });
         }
     }
