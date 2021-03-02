@@ -24,12 +24,14 @@ var app = new Vue({
     methods: {
 
         selectGenre(index) {
+            this.filterArray = [];
             this.dischiArray.forEach(element =>{
                 if(this.optionArray[index] == element.genere) {
-                    this.filterArray.splice(0, this.filterArray.length, element);
+                    console.log(element);
+                    this.filterArray.push(element);
                 }
+                console.log(this.filterArray);
             });
-            console.log(this.filterArray);
         }
     }
 });

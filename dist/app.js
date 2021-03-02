@@ -37,12 +37,16 @@ var app = new Vue({
     selectGenre: function selectGenre(index) {
       var _this2 = this;
 
+      this.filterArray = [];
       this.dischiArray.forEach(function (element) {
         if (_this2.optionArray[index] == element.genere) {
-          _this2.filterArray.splice(0, _this2.filterArray.length, element);
+          console.log(element);
+
+          _this2.filterArray.push(element);
         }
+
+        console.log(_this2.filterArray);
       });
-      console.log(this.filterArray);
     }
   }
 });
