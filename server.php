@@ -1,6 +1,6 @@
 <?php 
 
-include __DIR__ .'/db.php';
+include 'partials-php/db.php';
 
 header('Content-Type: application/json'); 
 

@@ -7,7 +7,7 @@ var app = new Vue({
     },
 
     mounted() {
-        axios.get('http://localhost/php-ajax-dischi/partials-php/server.php').then(response => {
+        axios.get('server.php').then(response => {
             this.dischiArray = response.data;
             this.dischiArray.forEach(element => {
                 if(this.optionArray.includes(element.genere) == false) {
@@ -33,7 +33,7 @@ var app = new Vue({
                     this.filterArray = this.dischiArray;
                 }
             });
-            
+
         }
     }
 });

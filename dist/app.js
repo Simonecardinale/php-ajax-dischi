@@ -17,7 +17,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('http://localhost/php-ajax-dischi/partials-php/server.php').then(function (response) {
+    axios.get('server.php').then(function (response) {
       _this.dischiArray = response.data;
 
       _this.dischiArray.forEach(function (element) {
