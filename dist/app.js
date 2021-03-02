@@ -7,16 +7,20 @@
   \********************/
 /***/ (() => {
 
-/******/
-(function () {
-  // webpackBootstrap
+var app = new Vue({
+  el: '#app',
+  data: {
+    dischiArray: []
+  },
+  mounted: function mounted() {
+    var _this = this;
 
-  /******/
-  "use strict";
-
-  var __webpack_exports__ = {};
-  /******/
-})();
+    axios.get('http://localhost/php-ajax-dischi/partials-php/server.php').then(function (response) {
+      console.log(response.data);
+      _this.dischiArray = response.data;
+    });
+  }
+});
 
 /***/ }),
 
