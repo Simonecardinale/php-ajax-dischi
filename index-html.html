@@ -19,6 +19,9 @@
                         <img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/spotify-3384019_960_720.png" alt="">
                     </div>
                     <div class="menu-container">
+                        <select name="" id="">
+                            <option @click="selectGenre(index)" v-for="(item, index) in optionArray" value=""> {{item}}</option>
+                        </select>
                         <i class="fas fa-bars"></i>
                     </div>
                 </div>
@@ -26,7 +29,7 @@
         </nav>
         <div class="container">
             <div class="dischi-container">
-                    <div v-for="val in dischiArray" class="dischi">
+                    <div v-for="val in filterArray"  class="dischi">
                         <img :src="val.immagine" alt="">
                         <h2>{{val.titolo}}</h2>
                         <p>{{val.autore}}</p>

@@ -61,6 +61,18 @@
             "genere" => "Metal",
             "immagine" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cxuT0_g5pwqmwGshB5J2IrF4rmTHv3BEzg&usqp=CAU"
         ],
+        [
+            "titolo" => "La storia infinita",
+            "autore" => "Pinguini Tattici Nucleari",
+            "genere" => "Pop",
+            "immagine" => "https://www.bergamonews.it/photogallery_new/images/2020/07/pinguini-tattici-nucleari-680026.660x368.jpg"
+        ],
+        [
+            "titolo" => "Sinfonia N. 8",
+            "autore" => "Beethoven",
+            "genere" => "Classica",
+            "immagine" => "https://www.guidaallascolto.it/wp-content/uploads/LudvigVanBeethoven.jpg"
+        ],
     ];
 
 

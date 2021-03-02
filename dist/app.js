@@ -10,15 +10,40 @@
 var app = new Vue({
   el: '#app',
   data: {
-    dischiArray: []
+    dischiArray: [],
+    optionArray: [],
+    filterArray: []
   },
   mounted: function mounted() {
     var _this = this;
 
     axios.get('http://localhost/php-ajax-dischi/partials-php/server.php').then(function (response) {
-      console.log(response.data);
       _this.dischiArray = response.data;
+
+      _this.dischiArray.forEach(function (element) {
+        if (_this.optionArray.includes(element.genere) == false) {
+          _this.optionArray.push(element.genere);
+        }
+      });
+
+      console.log(_this.optionArray);
+
+      _this.dischiArray.forEach(function (element) {
+        _this.filterArray.push(element);
+      });
     });
+  },
+  methods: {
+    selectGenre: function selectGenre(index) {
+      var _this2 = this;
+
+      this.dischiArray.forEach(function (element) {
+        if (_this2.optionArray[index] == element.genere) {
+          _this2.filterArray.splice(0, _this2.filterArray.length, element);
+        }
+      });
+      console.log(this.filterArray);
+    }
   }
 });
 
